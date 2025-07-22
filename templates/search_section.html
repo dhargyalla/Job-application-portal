@@ -1,0 +1,78 @@
+<section id="search">
+  <div class="container pt-5">
+    <form method="GET" action="/search">
+
+      <!-- Job Title Dropdown -->
+      <div class="row mb-3 mt-4">
+        <div class="col-12 col-md-2">
+          <label for="inputJobTitle" class="form-label">Search by job title</label>
+        </div>
+        <div class="col-12 col-md-10">
+          <select id="inputJobTitle" name="job_title" class="form-select">
+            <option selected>Choose...</option>
+            <option>Communications and Fundraising Officer</option>
+            <option>Customer Service Administrator (Hallam Help Administrator)</option>
+            <option>Evaluation and Data Officer</option>
+            <option>Graduate Intern - Higher Education Engagement Assistant (Multiple Posts)</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Employment Type Dropdown -->
+      <div class="row mb-3">
+        <div class="col-12 col-md-2">
+          <label for="empType" class="form-label">Search by employment type</label>
+        </div>
+        <div class="col-12 col-md-10">
+          <select id="empType" name="p_position_type" class="form-select">
+            <option value="ALLOPTIONS" selected>All</option>
+            <option value="FTFT">Fixed Term - Full Time</option>
+            <option value="PFT">Permanent - Full Time</option>
+            <option value="PPT">Permanent - Part Time</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Search by Faculty/Directorate/College Type Dropdown -->
+      <div class="row mb-3">
+        <div class="col-12 col-md-2">
+          <label for="empType" class="form-label">Search by Faculty/Directorate/College</label>
+        </div>
+        <div class="col-12 col-md-10">
+          <select size="1" title="Search by Faculty/Directorate/College" name="p_management_unit" class="erq_searchv4_drop_list">
+            <option selected="" value="ALLOPTIONS">All</option>
+            <option value="998">Associated Vacancies</option>
+            <option value="CBTE">College of Business, Tech. Engineering</option>
+            <option value="CHW">College of Health Wellbeing Life Science</option>
+            <option value="CSSA">College of Social Sciences  Arts</option>
+            <option value="RCM">Recruitment, Communications  Marketing</option>
+            <option value="STACSE">Student And Academic Services</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Search by job Type Dropdown -->
+      <div class="row mb-3">
+        <div class="col-12 col-md-2">
+          <label for="empType" class="form-label">Search by job type</label>
+        </div>
+        <div class="col-12 col-md-10">
+          <select size="1" title="Search by job type" name="p_competition_type" class="erq_searchv4_drop_list">
+            <option selected="" value="ALLOPTIONS">All</option>
+            <option value="AC">Academic</option>
+            <option value="OTHER">Other</option>
+            <option value="MPRO">Professional Business Support</option>
+            <option value="STGR">Student Academic Support</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Submit Button -->
+      <div class="row mb-3">
+        <div class="col-12 text-end">
+          <button type="submit" class="btn btn-primary">Search</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</section>
