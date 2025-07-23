@@ -32,11 +32,9 @@
     <script src="{{ url_for('static', filename='js/custom.js') }}"></script>
     {% endblock %}
 
-    <div class="container">
-        {% block footer %}
-        &copy; Copyright 2008 by <a href="http://domain.invalid/">you</a>.
-        {% endblock %}
-    </div>
+    {% block footer %}
+        {% include 'footer.html' %}
+    {% endblock %}
 
 </body>
 </html>
