@@ -1,0 +1,29 @@
+<div class="container">
+    <div class="site-heading text-center mb-5 mt-5">
+      <h4>{{company_name}} Jobs openning</h4>
+      <p class="lead">Eros ante urna tortor aliquam nisl magnis quisque hac</p>
+    </div>
+    {% for job in jobs %}
+    <div class="card mb-3">
+      <div class="card-body">
+        <div class="d-flex flex-column flex-lg-row">
+          <span class="avatar avatar-text rounded-3 me-4 mb-2">FD</span>
+          <div class="row flex-fill">
+            <div class="col-sm-5">
+              <h4 class="h5">{{job.title}}</h4>
+              <span class="badge bg-secondary">WORLDWIDE</span> <span class="badge bg-success">{{job.salary}}</span>
+            </div>
+            <div class="col-sm-4 py-2">
+              {% for requirement in job['Requirements'] %}
+              <span class="badge bg-secondary">{{ requirement }}</span>
+              {% endfor %}
+            </div>
+            <div class="col-sm-3 text-lg-end">
+              <a href="#" class="btn btn-primary stretched-link">Apply</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+</div>
