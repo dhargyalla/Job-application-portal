@@ -11,10 +11,11 @@
           <div class="row flex-fill">
             <div class="col-sm-5">
               <h4 class="h5">{{job.title}}</h4>
-              <span class="badge bg-secondary">WORLDWIDE</span> <span class="badge bg-success">{{job.salary}}</span>
+              <span class="badge bg-secondary">{{job.location}}</span> <span class="badge bg-success">{{ job.currency }}{{job.salary_min}}- {{ job.currency }}{{job.salary_min}}</span>
+              <p class="mt-2">{{ job.descriptions }}</p>
             </div>
             <div class="col-sm-4 py-2">
-              {% for requirement in job['Requirements'] %}
+              {% for requirement in job.requirements.split(",") %}
               <span class="badge bg-secondary">{{ requirement }}</span>
               {% endfor %}
             </div>
