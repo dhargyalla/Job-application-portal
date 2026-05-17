@@ -1,4 +1,19 @@
-{% extends 'base.html' %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <title>
+        {% block title %} Job portal {% endblock %}
+    </title>
+
+    {% block styles %}
+    <!-- Load Bootstrap-Flask CSS here -->
+    {{ bootstrap.load_css() }}
+    <!-- Load custom CSS -->
+    <link rel="stylesheet" href=" {{ url_for('static', filename='assets/css/styles.css') }}">
+    {% endblock %}
+
+</head>
+
 {% block content %}
 <section>  <!-- Maintenance section -->
     <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
