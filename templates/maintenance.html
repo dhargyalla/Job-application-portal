@@ -1,36 +1,26 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Site Under Maintenance</title>
+{% extends "base.html" %}
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
-  </head>
+{% block title %}Site Under Maintenance{% endblock %}
 
-  <body class="bg-light">
+{% block content %}
+<div class="d-flex justify-content-center align-items-center vh-100">
+  <div class="text-center">
 
-    <div class="d-flex justify-content-center align-items-center vh-100">
-      <div class="text-center">
+    <!-- Logo -->
+    <img src="{{ url_for('static', filename='assets/images/logo.png') }}"
+         alt="Logo"
+         class="img-fluid mb-4"
+         style="max-width: 160px;">
 
-        <!-- Logo -->
-        <img src="{{ url_for('static', filename='assets/images/logo.png') }}"
-             alt="Logo"
-             class="img-fluid mb-4"
-             style="max-width: 160px;">
-
-        <!-- Card -->
-        <div class="card shadow-sm p-4" style="max-width: 420px; margin: auto;">
-          <h4 class="mb-3">We’ll Be Back Soon</h4>
-          <p class="text-muted mb-0">
-            Our website is currently undergoing scheduled maintenance.<br>
-            Thank you for your patience.
-          </p>
-        </div>
-
-      </div>
+    <!-- Card -->
+    <div class="card shadow-sm p-4" style="max-width: 420px; margin: auto;">
+      <h4 class="mb-3">We’ll Be Back Soon</h4>
+      <p class="text-muted mb-0">
+        Our website is currently undergoing scheduled maintenance.<br>
+        Thank you for your patience.
+      </p>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
-  </body>
-</html>
+  </div>
+</div>
+{% endblock %}
