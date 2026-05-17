@@ -3,7 +3,7 @@ from flask import Flask, render_template,jsonify
 from flask_sqlalchemy import SQLAlchemy
 from sqlalchemy.orm import DeclarativeBase, Mapped, mapped_column
 from sqlalchemy import Integer, String, Float
-
+import os
 
 
 app = Flask(__name__)
@@ -49,7 +49,10 @@ with app.app_context():
 bootstrap = Bootstrap5(app)
 
 
-
+@app.before_request
+def check_maintenance():
+    if os.getenv("MAINTENANCE_MODE") == "on":
+        return render_template("maintenance.html")
 @app.route('/')
 def home():
     return render_template('home.html')
