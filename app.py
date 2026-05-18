@@ -1,5 +1,5 @@
 from flask_bootstrap import Bootstrap5
-from flask import Flask, render_template,jsonify
+from flask import Flask, render_template,jonify, request
 from flask_sqlalchemy import SQLAlchemy
 from sqlalchemy.orm import DeclarativeBase, Mapped, mapped_column
 from sqlalchemy import Integer, String, Float
@@ -53,7 +53,11 @@ bootstrap = Bootstrap5(app)
 @app.before_request
 def check_maintenance():
     if os.getenv("MAINTENANCE_MODE") == "on":
+        # allow static files
+        if request.path.startswith('/static/'):
+            return None
         return render_template("maintenance.html")
+
 @app.route('/')
 def home():
     return render_template('home.html')
