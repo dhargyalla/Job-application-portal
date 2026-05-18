@@ -53,11 +53,7 @@ bootstrap = Bootstrap5(app)
 @app.before_request
 def check_maintenance():
     if os.getenv("MAINTENANCE_MODE") == "on":
-        # allow static files
-        if request.path.startswith('/static/'):
-            return None
         return render_template("maintenance.html")
-
 @app.route('/')
 def home():
     return render_template('home.html')
