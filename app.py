@@ -6,7 +6,8 @@ from sqlalchemy import Integer, String, Float
 import os
 
 
-app = Flask(__name__)
+app = Flask(__name__, static_folder='static',
+    static_url_path='/static')
 
 ##CREATE DATABASE
 class Base(DeclarativeBase):
