@@ -51,7 +51,7 @@ bootstrap = Bootstrap5(app)
 
 @app.before_request
 def check_maintenance():
-    if os.getenv("MAINTENANCE_MODE") == "on":
+    if os.getenv("MAINTENANCE_MODE") == "off":
         # allow static files to load
         if request.path.startswith('/static/'):
             return None
