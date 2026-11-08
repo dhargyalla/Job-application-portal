@@ -51,7 +51,7 @@ body {
 
 /* Navbar */
 .navbar {
-    min-height: 90px;
+    min-height: 120px;
     padding: 0 20px;
     background-color: #fff !important;
 }
@@ -61,9 +61,8 @@ body {
 }
 
 .navbar-brand img {
-    height: 80px;
-    width: auto;
-    object-fit: contain;
+    height: 110px !important;
+    border: 2px solid red;
 }
 
 .navbar-nav .nav-link {
