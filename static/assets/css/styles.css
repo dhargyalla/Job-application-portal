@@ -80,7 +80,8 @@ body {
 .navbar-brand img {
     height: 85px;
     width: auto;
-    border-radius: 50%;
+    border-radius: 0;
+    object-fit: contain;
 }
 
 /* Foundation Name */
