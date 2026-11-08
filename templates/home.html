@@ -4,15 +4,6 @@
 {% block content %}
 <section>  <!-- Header section -->
     <div class="container pt-5">
-        <div class="row gx-4 gx-lg-5 mt-5 justify-content-center">
-            <div class="col col-md-10 col-lg-8 col-xl-7 text-center">
-                <div class="site-heading">
-                  <h4 class="display-4 fw-bold"> Yamuna Khimtsang Foundation</h4>
-                  <span class="subheading fs-5">Creating a world where humans and animals thrive together through compassion, care, and connection.</span><br><br>
-                </div>
-            </div>
-        </div>
-
         <div class="row">
             <div class="col">
                 <div class="mt-4">
@@ -30,6 +21,11 @@
         </div>
 
     </div>
+</section>
+<!-- Full Width Banner -->
+<section class="hero-banner">
+    <img src="{{ url_for('static', filename='assets/images/banner.png') }}"
+         alt="Yamuna Khimtsang Foundation Banner">
 </section>
 
 
