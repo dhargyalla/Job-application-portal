@@ -150,6 +150,18 @@ main {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+/* Full Width Banner */
+
+.hero-banner {
+    width: 100%;   overflow: hidden;
+}
+
+.hero-banner img {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+    display: block;
+}
 /* =========================
    Mobile
 ========================= */
@@ -190,5 +202,8 @@ main {
     .navbar-collapse {
         width: 100%;
         margin-top: 10px;
+    }
+    .hero-banner img*{
+        height: 250px;
     }
 }
