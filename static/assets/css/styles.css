@@ -51,20 +51,19 @@ body {
 
 /* Navbar */
 .navbar {
-    min-height: 120px;
-    padding: 0 20px;
-    background-color: #fff !important;
+    min-height: 110px;
+    background: #fff !important;
 }
 
 .navbar-brand {
-    margin-left: 0;
+    padding: 0;
 }
 
 .navbar-brand img {
-    height: 110px !important;
-    border: 2px solid red;
+    height: 90px;
+    width: auto;
+    display: block;
 }
-
 .navbar-nav .nav-link {
     font-size: 1rem;
     font-weight: 500;
