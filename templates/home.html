@@ -2,6 +2,12 @@
 {% block title %} Job Portal {% endblock %}
 
 {% block content %}
+<!-- Full Width Banner -->
+<section class="hero-banner">
+    <img src="{{ url_for('static', filename='assets/images/banner.png') }}"
+         alt="Yamuna Khimtsang Foundation Banner">
+</section>
+
 <section>  <!-- Header section -->
     <div class="container pt-5">
         <div class="row">
@@ -22,11 +28,7 @@
 
     </div>
 </section>
-<!-- Full Width Banner -->
-<section class="hero-banner">
-    <img src="{{ url_for('static', filename='assets/images/banner.png') }}"
-         alt="Yamuna Khimtsang Foundation Banner">
-</section>
+
 
 
 {% endblock %}
