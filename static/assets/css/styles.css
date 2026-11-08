@@ -1,17 +1,21 @@
-/* General */
+/* =========================
+   General
+========================= */
+
 body {
     background: #eee;
 }
 
-/* Cards */
+/* =========================
+   Cards
+========================= */
+
 .card {
     position: relative;
     display: flex;
     flex-direction: column;
     min-width: 0;
-    word-wrap: break-word;
     background-color: #fff;
-    background-clip: border-box;
     border: 0;
     border-radius: 1rem;
     box-shadow: 0 20px 27px 0 rgb(0 0 0 / 5%);
@@ -22,7 +26,10 @@ body {
     padding: 1.5rem;
 }
 
-/* Avatar */
+/* =========================
+   Avatar
+========================= */
+
 .avatar-text {
     display: flex;
     justify-content: center;
@@ -49,34 +56,70 @@ body {
     margin-right: 1.5rem !important;
 }
 
-/* Navbar */
+/* =========================
+   Navbar
+========================= */
+
 .navbar {
     min-height: 110px;
     background: #fff !important;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    padding: 0 20px;
 }
+
+/* Brand Area */
 
 .navbar-brand {
-    padding: 0;
-    margin-left: 25px;
-    }
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    text-decoration: none;
+    margin-left: 20px;
+}
 
 .navbar-brand img {
-    height: 90px;
+    height: 85px;
     width: auto;
-    display: block;
+    border-radius: 50%;
 }
+
+/* Foundation Name */
+
+.brand-text {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.2;
+}
+
+.brand-title {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #222;
+    margin: 0;
+}
+
+.brand-tagline {
+    font-size: 0.85rem;
+    color: #666;
+    font-style: italic;
+    margin-top: 3px;
+}
+
+/* Navigation Links */
+
 .navbar-nav .nav-link {
     font-size: 1rem;
     font-weight: 500;
     padding: 0.75rem 1rem;
     color: #333 !important;
-    transition: color 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 .navbar-nav .nav-link:hover {
-    color: #0d6efd !important;
+    color: #198754 !important;
 }
+
+/* Toggle Button */
 
 .navbar-toggler {
     border: none;
@@ -86,12 +129,18 @@ body {
     box-shadow: none;
 }
 
-/* Content spacing below fixed navbar */
+/* =========================
+   Main Content
+========================= */
+
 main {
-    padding-top: 110px;
+    padding-top: 120px;
 }
 
-/* Box */
+/* =========================
+   Box
+========================= */
+
 .box {
     background: #fff;
     padding: 40px;
@@ -101,36 +150,41 @@ main {
 }
 
 /* =========================
-   Mobile Navbar
+   Mobile
 ========================= */
+
 @media (max-width: 991px) {
 
     .navbar {
         min-height: 90px;
-        position: relative;
+        padding: 10px;
     }
 
     .navbar-brand {
-        position: absolute;
-        left: 20%;
-        transform: translateX(-50%);
-        margin-left: 0 !important;
-        padding: 0;
+        margin-left: 0;
+        gap: 10px;
     }
 
     .navbar-brand img {
-        height: 90px;
-        width: auto;
+        height: 60px;
     }
 
-    .navbar-toggler {
-        position: absolute;
-        right: 15px;
-        top: 50%;
-        transform: translateY(-50%);
+    .brand-title {
+        font-size: 1rem;
+    }
+
+    .brand-tagline {
+        font-size: 0.7rem;
     }
 
     .navbar-collapse {
-        margin-top: 20px;
+        margin-top: 15px;
+        background: #fff;
+        padding: 15px;
+        border-radius: 10px;
+    }
+
+    main {
+        padding-top: 100px;
     }
 }
