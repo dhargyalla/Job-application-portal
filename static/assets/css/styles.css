@@ -57,7 +57,8 @@ body {
 
 .navbar-brand {
     padding: 0;
-}
+    margin-left: 25px;
+    }
 
 .navbar-brand img {
     height: 90px;
