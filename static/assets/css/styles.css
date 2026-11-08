@@ -53,6 +53,7 @@ body {
 .navbar {
     min-height: 110px;
     background: #fff !important;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .navbar-brand {
