@@ -183,7 +183,7 @@ main {
     }
 
     .navbar-brand img {
-        height: 80px;
+        height: 100px;
     }
 
     .brand-title {
@@ -204,6 +204,6 @@ main {
         margin-top: 10px;
     }
     .hero-banner img*{
-        height: 350px;
+        height: 650px;
     }
 }
