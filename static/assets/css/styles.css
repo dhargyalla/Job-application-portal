@@ -170,15 +170,15 @@ main {
     }
 
     .navbar-brand img {
-        height: 60px;
+        height: 70px;
     }
 
     .brand-title {
-        font-size: 0.9rem;
+        font-size: 0.8rem;
     }
 
     .brand-tagline {
-        font-size: 0.65rem;
+        font-size: 0.55rem;
     }
 
     .navbar-toggler {
